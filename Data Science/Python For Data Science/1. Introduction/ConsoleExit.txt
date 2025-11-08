@@ -1,0 +1,62 @@
+########################################### COMMENT ###########################################
+
+1. First, simulated n_samples=1000 as data
+2. Second, split data to train the model and to test it
+3. Third, define the tree choosing min_samples_split=2 and max_depth=5 (explained in the code)
+
+###############################################################################################
+
+######################################## CONSOLE EXIT #########################################
+
+['male']
+X_2 <= 40.0 ? 0.32597812939521803
+ left:X_0 <= 176.0 ? 0.06237074045915171
+  left:X_1 <= 88.0 ? 0.020241945143130602        
+    left:X_1 <= 74.0 ? 0.006181293872587479      
+        left:X_0 <= 173.0 ? 0.0011129868800130588
+                left:female
+                right:female
+        right:X_2 <= 39.0 ? 0.0418803418803419   
+                left:female
+                right:female
+    right:X_0 <= 155.0 ? 0.2777777777777777      
+        left:female
+        right:male
+  right:X_1 <= 63.0 ? 0.2378070850110842
+    left:X_0 <= 181.0 ? 0.09375
+        left:female
+        right:X_0 <= 182.0 ? 0.5
+                left:male
+                right:female
+    right:X_1 <= 78.0 ? 0.011632979496873835
+        left:X_1 <= 76.0 ? 0.11932938856015768
+                left:male
+                right:female
+        right:male
+ right:X_1 <= 71.0 ? 0.05443858770554691
+  left:X_2 <= 42.0 ? 0.2427463877923307
+    left:X_0 <= 175.0 ? 0.2771798893155228
+        left:X_1 <= 55.0 ? 0.014876033057851137
+                left:female
+                right:female
+        right:male
+    right:X_0 <= 163.0 ? 0.05229291716686661
+        left:female
+        right:X_0 <= 169.0 ? 0.006673257538309531
+                left:male
+                right:male
+  right:X_0 <= 157.0 ? 0.0029598951734402072
+    left:X_0 <= 155.0 ? 0.5
+        left:male
+        right:female
+    right:X_0 <= 169.0 ? 0.0012812967365384911
+        left:X_1 <= 72.0 ? 0.04801587301587318
+                left:female
+                right:male
+        right:X_2 <= 41.0 ? 0.00019035097111623923
+                left:male
+                right:male
+
+ The accuracy score of this tree is: 0.95
+
+###############################################################################################
